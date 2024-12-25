@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Result Scoreboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./javascript.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+      <p id="login-error" class="error"></p>
+      <p class="toggle-button" onclick="toggleForm('signup')">Don't have an account? Sign Up</p>
+    </div>
+
+    <div id="signup-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <button onclick="signup()">Sign Up</button>
+      <p id="signup-error" class="error"></p>
+      <p class="toggle-button" onclick="toggleForm('login')">Already have an account? Login</p>
+    </div>
+
+    <div id="result-page">
+      <h2>Result Scoreboard</h2>
+      <div class="scoreboard-card" id="results"></div>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
